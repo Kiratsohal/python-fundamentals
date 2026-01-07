@@ -1,23 +1,21 @@
 import random
-number=random.randint
 highest=10
-print=int(input('guess a number between 1-{}'.format(highest)))
+number=random.randint(1,highest)
+print('guess a number between 1-{}'.format(highest))
+
 guess=int(input())
-
-if guess<number:
-    print('you need to think for a higher number')
-    guess=int(input())
-    if guess==number:
-     print('you are right')
-    else:
-       print('wrong guesss')
-
-elif guess>number:
-    print('guess a lower number')
-    guess=int(input())
-    if guess==number:
-        print('you are right')
-    else:
-       print('not today')
+if guess==number:
+    print('you guessded it on first time')
 else:
-   print('guessed on first time')
+    print('you have not guessed it coreectly')
+    guess=int(input())
+    while guess<number:
+      if guess<number:
+        print('think of a higher number')
+    else:
+        print('sorry you failed to guess it')
+    if guess>number:
+        print('think of a lower number')
+    else:
+        print('sorry you failed to guess it')
+    
