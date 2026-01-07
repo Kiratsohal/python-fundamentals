@@ -1,6 +1,7 @@
 import random
 highest=10
 number=random.randint(1,highest)
+print(number)#if you want to see random number
 print('guess a number between 1-{}'.format(highest))
 
 guess=int(input())
@@ -19,3 +20,4 @@ else:
     else:
         print('sorry you failed to guess it')
     
+
