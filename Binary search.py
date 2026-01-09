@@ -18,4 +18,5 @@ while True:
      break
     else:
           print("press h or l or c  to start the game")
+
     guess= guess+1
